@@ -22,15 +22,16 @@ data.append(np.load('concentrationdata_5e-04.npy'))
 data.append(np.load('concentrationdata_5e-05.npy'))
 # data.append(np.load('concentrationdata_5e-06.npy'))
 
+legendlist = [r'-5', r'-2.5', r'-0.5','-0.05']
+
 # CO2 concentration
 plt.figure(1, figsize=(4,4))
 for i in range(0, len(data)):
     plt.plot(data[i][:,0], data[i][:,1], fmtcycle[i], color=lapis)
-    plt.grid(True)
     plt.xlim([0, data[i][-1,0]])
     plt.xlabel(r'$x \; \mathrm{(\mu m)}$')
     plt.ylabel(r'$\mathrm{[CO_2 \; (aq)]} \; \mathrm{(mM)}$')
-plt.legend(['5e-3','2.5e-3','5e-4','5e-5'])
+plt.legend(legendlist)
 plt.subplots_adjust(top=0.93,
     bottom=0.2,
     left=0.215,
@@ -42,11 +43,10 @@ plt.subplots_adjust(top=0.93,
 plt.figure(2, figsize=(4,4))
 for i in range(0, len(data)):
     plt.plot(data[i][:,0], data[i][:,4], fmtcycle[i], color=china)
-    plt.grid(True)
     plt.xlim([0, data[i][-1,0]])
     plt.xlabel(r'$x \; \mathrm{(\mu m)}$')
     plt.ylabel(r'$\mathrm{pH}$')
-plt.legend(['5e-3','2.5e-3','5e-4','5e-5'])
+plt.legend(legendlist)
 plt.subplots_adjust(top=0.93,
     bottom=0.2,
     left=0.215,
@@ -58,11 +58,10 @@ plt.subplots_adjust(top=0.93,
 plt.figure(3, figsize=(4,4))
 for i in range(0, len(data)):
     plt.plot(data[i][:,0], data[i][:,2], fmtcycle[i], color=spring)
-    plt.grid(True)
     plt.xlim([0, data[i][-1,0]])
     plt.xlabel(r'$x \; \mathrm{(\mu m)}$')
     plt.ylabel(r'$\mathrm{[HCO_3^-]} \; \mathrm{(mM)}$')
-plt.legend(['5e-3','2.5e-3','5e-4','5e-5'])
+plt.legend(legendlist)
 plt.subplots_adjust(top=0.93,
     bottom=0.2,
     left=0.215,
@@ -74,11 +73,10 @@ plt.subplots_adjust(top=0.93,
 plt.figure(4, figsize=(4,4))
 for i in range(0, len(data)):
     plt.plot(data[i][:,0], data[i][:,3], fmtcycle[i], color=end)
-    plt.grid(True)
     plt.xlim([0, data[i][-1,0]])
     plt.xlabel(r'$x \; \mathrm{(\mu m)}$')
     plt.ylabel(r'$\mathrm{[CO_3^{2-}]} \; \mathrm{(mM)}$')
-plt.legend(['5e-3','2.5e-3','5e-4','5e-5'])
+plt.legend(legendlist)
 plt.subplots_adjust(top=0.93,
     bottom=0.2,
     left=0.215,
