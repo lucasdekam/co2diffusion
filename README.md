@@ -1,5 +1,5 @@
 # Modeling diffusion around the cathode in a low-temperature carbon dioxide reduction cell
-Research Practicum for ChemE TU Delft
+This is a Research Practicum (RP) project for ChemE TU Delft.
 
 You can find the code for solving the differential equations in the .ipynb notebook file.
 You can download and run this, given that you have Python installed with the modules
