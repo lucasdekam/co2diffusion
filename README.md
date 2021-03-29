@@ -1,4 +1,4 @@
-# Carbon dioxide diffusion around the cathode in a low-temperature carbon dioxide reduction cell
+# Modeling diffusion around the cathode in a low-temperature carbon dioxide reduction cell
 Research Practicum for ChemE TU Delft
 
 You can find the code for solving the differential equations in the .ipynb notebook file.
